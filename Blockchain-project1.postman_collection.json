@@ -93,6 +93,26 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "getBlockByStars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/blocks/mhSgxkXH9GTEHp8ccBmdv6Jgzdvc8FCHjx",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"blocks",
+						"mhSgxkXH9GTEHp8ccBmdv6Jgzdvc8FCHjx"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"protocolProfileBehavior": {}
