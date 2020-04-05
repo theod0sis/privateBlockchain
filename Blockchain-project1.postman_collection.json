@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "a7ccd9c9-0f05-48fa-9444-84fd39e17b14",
+		"name": "Blockchain-project1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create first block",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/block/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"block",
+						"0"
+					]
+				},
+				"description": "initial request"
+			},
+			"response": []
+		},
+		{
+			"name": "requestValidation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"address\":\"2MynpsaE42MdYqMwKTVa7MzwZFfpnQbEpcA\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/requestValidation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"requestValidation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "submitstar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"address\": \"mhSgxkXH9GTEHp8ccBmdv6Jgzdvc8FCHjx\",\n    \"signature\": \"HwEijDv8+gWpyYAmxM4bR3nyG94nIWdpf+eQrOgDTTdoIBo3KJUHvIJ2Q/Sb+O3wqjgjp4pEUVHguyhvosus3T4=\",\n    \"message\": \"mhSgxkXH9GTEHp8ccBmdv6Jgzdvc8FCHjx:1586042087:starRegistry\",\n    \"star\": {\n        \"dec\": \"68' 52' 78' 25'\",\n        \"rg\": \"75' 45' 45' 47'\",\n        \"story\": \"Testing the story 4\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/submitstar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"submitstar"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
